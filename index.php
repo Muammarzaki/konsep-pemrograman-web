@@ -31,7 +31,7 @@
                         die("Koneksi gagal:" . $con->connect_error);
                     }
 
-                    $sql = "select * from users";
+                    $sql = "select * from pendaftar";
                     $result = $con->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -43,8 +43,8 @@
                                 <td><?= $row["email"] ?></td>
                                 <td><?= $row["phone"] ?></td>
                                 <td>
-                                    <a href="edit.php?id=<?= $row["id"] ?>" class="btn-edit">Edit</a>
-                                    <a href="hapus.php?=<?= $row["id"] ?>" class="btn-delete">Hapus</a>
+                                    <a href="update.php?id=<?= $row["id"] ?>" class="btn-edit">Edit</a>
+                                    <a href="delete.php?id=<?= $row["id"] ?>" class="btn-delete">Hapus</a>
                                 </td>
                             </tr>
                     <?php
