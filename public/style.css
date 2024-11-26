@@ -1,0 +1,16 @@
+.image-size {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+body {
+    background-color: #EBEBE8;
+
+    padding: 0;
+    margin: 0
+}
+
+nav {
+    background-color: #D1E2C4;
+}
